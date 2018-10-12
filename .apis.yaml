@@ -1,0 +1,27 @@
+http:
+  port: 8000
+
+database:
+  mysql:
+    driver: "mysql"
+    write: "root:secret@tcp(127.0.0.1:3306)/bareksa_marketdata_live?charset=utf8&parseTime=true&loc=Local"
+    read: "root:secret@tcp(127.0.0.1:3306)/bareksa_marketdata_live?charset=utf8&parseTime=true&loc=Local"
+    max_idle: 5
+    max_cons: 5
+  marketdata_live:
+    driver: "mysql"
+    write: "root:secret@tcp(127.0.0.1:3306)/bareksa_marketdata_live?charset=utf8&parseTime=true&loc=Local"
+    read: "root:secret@tcp(127.0.0.1:3306)/bareksa_marketdata_live?charset=utf8&parseTime=true&loc=Local"
+    max_idle: 5
+    max_cons: 5
+#   postgres:
+#     write: "postgres://bareksa:secret@127.0.0.1:5432/umroh_tokped?sslmode=disable"
+#     read: "postgres://bareksa:secret@127.0.0.1:5432/umroh_tokped?sslmode=disable"
+#     max_idle: 5
+#     max_cons: 5
+#
+# jwt_key: "asf987hdghHudfk76lfJJHF08w478234H"
+#
+# sentry:
+#   dsn : "adadadadadad"
+#   timeout : 20
